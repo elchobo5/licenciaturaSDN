@@ -1,0 +1,475 @@
+#The sections are strictly ordered.
+#Don't remove or rearrange any section
+
+[EmulationName]
+topo7
+
+[PhysicalTopology]
+#First line: Number of physical machines
+#Then, each line specifies a tuple:
+#type name ip cpu memory disk external_interface bandwidth
+2
+manager manager 192.168.227.130
+node node 192.168.227.131 4 512 8 eth0 1024
+
+[PhysicalMachineDelay]
+#Pairwise delay between any physical vms
+#If no delay between a pair is specified, default value will be considered
+#Default value of delay is 0
+#First line: Number of pair of machines have delay
+#Next, each line specifies a tuple
+#machine1, machine2, delay (ms)
+0
+
+[LogicalTopology]
+#First line: Number of switches, number of links
+#Each switch is represented by 's#'
+#Switch # should start with 1
+#Next, each line specifies a bidirectional link with the following format:
+# s# s# bandwidth delay
+50 50
+s1 s2 499 0
+s2 s3 499 0
+s3 s4 499 0
+s4 s5 499 0
+s5 s6 499 0
+s6 s7 499 0
+s7 s8 499 0
+s8 s9 499 0
+s9 s10 499 0
+s10 s11 499 0
+s11 s12 499 0
+s12 s13 499 0
+s13 s14 499 0
+s14 s15 499 0
+s15 s16 499 0
+s16 s17 499 0
+s17 s18 499 0
+s18 s19 499 0
+s19 s20 499 0
+s20 s21 499 0
+s21 s22 499 0
+s22 s23 499 0
+s23 s24 499 0
+s24 s25 499 0
+s25 s26 499 0
+s26 s27 499 0
+s27 s28 499 0
+s28 s29 499 0
+s29 s30 499 0
+s30 s31 499 0
+s31 s32 499 0
+s32 s33 499 0
+s33 s34 499 0
+s34 s35 499 0
+s35 s36 499 0
+s36 s37 499 0
+s37 s38 499 0
+s38 s39 499 0
+s39 s40 499 0
+s40 s41 499 0
+s41 s42 499 0
+s42 s43 499 0
+s43 s44 499 0
+s44 s45 499 0
+s45 s46 499 0
+s46 s47 499 0
+s47 s48 499 0
+s48 s49 499 0
+s49 s50 499 0
+s1 s50 499 0
+
+[Images]
+#Number of images
+#each line image id, type, location
+2
+i1 tc base_tc.qcow2
+i2 ubuntu base_lubuntu_mini.qcow2
+
+[VirtualMachineProvision]
+#Start marker of this section. Don't remove
+Hypervisor=kvm
+Library=lib-virt
+NetworkFile=resources/provisioning/libvirt/libvirt_network.xml
+#End marker of this section. Don't remove
+
+[VirtualMachines]
+#First line: Number of VMs
+#Each switch is represented by 'h#'
+#VM# should start with 1
+#Next, each line specifies a VM, the switch it is attached, CPU, B/W(Mbps), Memory(MB) and image:
+# VM# s# CPU B/W Memory i#
+300
+h1 s1 1 300 8 i1
+h2 s1 1 300 8 i1
+h3 s1 1 300 8 i1
+h4 s1 1 300 8 i1
+h5 s1 1 300 8 i1
+h6 s1 1 300 8 i1
+h7 s2 1 300 8 i1
+h8 s2 1 300 8 i1
+h9 s2 1 300 8 i1
+h10 s2 1 300 8 i1
+h11 s2 1 300 8 i1
+h12 s2 1 300 8 i1
+h13 s3 1 300 8 i1
+h14 s3 1 300 8 i1
+h15 s3 1 300 8 i1
+h16 s3 1 300 8 i1
+h17 s3 1 300 8 i1
+h18 s3 1 300 8 i1
+h19 s4 1 300 8 i1
+h20 s4 1 300 8 i1
+h21 s4 1 300 8 i1
+h22 s4 1 300 8 i1
+h23 s4 1 300 8 i1
+h24 s4 1 300 8 i1
+h25 s5 1 300 8 i1
+h26 s5 1 300 8 i1
+h27 s5 1 300 8 i1
+h28 s5 1 300 8 i1
+h29 s5 1 300 8 i1
+h30 s5 1 300 8 i1
+h31 s6 1 300 8 i1
+h32 s6 1 300 8 i1
+h33 s6 1 300 8 i1
+h34 s6 1 300 8 i1
+h35 s6 1 300 8 i1
+h36 s6 1 300 8 i1
+h37 s7 1 300 8 i1
+h38 s7 1 300 8 i1
+h39 s7 1 300 8 i1
+h40 s7 1 300 8 i1
+h41 s7 1 300 8 i1
+h42 s7 1 300 8 i1
+h43 s8 1 300 8 i1
+h44 s8 1 300 8 i1
+h45 s8 1 300 8 i1
+h46 s8 1 300 8 i1
+h47 s8 1 300 8 i1
+h48 s8 1 300 8 i1
+h49 s9 1 300 8 i1
+h50 s9 1 300 8 i1
+h51 s9 1 300 8 i1
+h52 s9 1 300 8 i1
+h53 s9 1 300 8 i1
+h54 s9 1 300 8 i1
+h55 s10 1 300 8 i1
+h56 s10 1 300 8 i1
+h57 s10 1 300 8 i1
+h58 s10 1 300 8 i1
+h59 s10 1 300 8 i1
+h60 s10 1 300 8 i1
+h61 s11 1 300 8 i1
+h62 s11 1 300 8 i1
+h63 s11 1 300 8 i1
+h64 s11 1 300 8 i1
+h65 s11 1 300 8 i1
+h66 s11 1 300 8 i1
+h67 s12 1 300 8 i1
+h68 s12 1 300 8 i1
+h69 s12 1 300 8 i1
+h70 s12 1 300 8 i1
+h71 s12 1 300 8 i1
+h72 s12 1 300 8 i1
+h73 s13 1 300 8 i1
+h74 s13 1 300 8 i1
+h75 s13 1 300 8 i1
+h76 s13 1 300 8 i1
+h77 s13 1 300 8 i1
+h78 s13 1 300 8 i1
+h79 s14 1 300 8 i1
+h80 s14 1 300 8 i1
+h81 s14 1 300 8 i1
+h82 s14 1 300 8 i1
+h83 s14 1 300 8 i1
+h84 s14 1 300 8 i1
+h85 s15 1 300 8 i1
+h86 s15 1 300 8 i1
+h87 s15 1 300 8 i1
+h88 s15 1 300 8 i1
+h89 s15 1 300 8 i1
+h90 s15 1 300 8 i1
+h91 s16 1 300 8 i1
+h92 s16 1 300 8 i1
+h93 s16 1 300 8 i1
+h94 s16 1 300 8 i1
+h95 s16 1 300 8 i1
+h96 s16 1 300 8 i1
+h97 s17 1 300 8 i1
+h98 s17 1 300 8 i1
+h99 s17 1 300 8 i1
+h100 s17 1 300 8 i1
+h101 s17 1 300 8 i1
+h102 s17 1 300 8 i1
+h103 s18 1 300 8 i1
+h104 s18 1 300 8 i1
+h105 s18 1 300 8 i1
+h106 s18 1 300 8 i1
+h107 s18 1 300 8 i1
+h108 s18 1 300 8 i1
+h109 s19 1 300 8 i1
+h110 s19 1 300 8 i1
+h111 s19 1 300 8 i1
+h112 s19 1 300 8 i1
+h113 s19 1 300 8 i1
+h114 s19 1 300 8 i1
+h115 s20 1 300 8 i1
+h116 s20 1 300 8 i1
+h117 s20 1 300 8 i1
+h118 s20 1 300 8 i1
+h119 s20 1 300 8 i1
+h120 s20 1 300 8 i1
+h121 s21 1 300 8 i1
+h122 s21 1 300 8 i1
+h123 s21 1 300 8 i1
+h124 s21 1 300 8 i1
+h125 s21 1 300 8 i1
+h126 s21 1 300 8 i1
+h127 s22 1 300 8 i1
+h128 s22 1 300 8 i1
+h129 s22 1 300 8 i1
+h130 s22 1 300 8 i1
+h131 s22 1 300 8 i1
+h132 s22 1 300 8 i1
+h133 s23 1 300 8 i1
+h134 s23 1 300 8 i1
+h135 s23 1 300 8 i1
+h136 s23 1 300 8 i1
+h137 s23 1 300 8 i1
+h138 s23 1 300 8 i1
+h139 s24 1 300 8 i1
+h140 s24 1 300 8 i1
+h141 s24 1 300 8 i1
+h142 s24 1 300 8 i1
+h143 s24 1 300 8 i1
+h144 s24 1 300 8 i1
+h145 s25 1 300 8 i1
+h146 s25 1 300 8 i1
+h147 s25 1 300 8 i1
+h148 s25 1 300 8 i1
+h149 s25 1 300 8 i1
+h150 s25 1 300 8 i1
+h151 s26 1 300 8 i1
+h152 s26 1 300 8 i1
+h153 s26 1 300 8 i1
+h154 s26 1 300 8 i1
+h155 s26 1 300 8 i1
+h156 s26 1 300 8 i1
+h157 s27 1 300 8 i1
+h158 s27 1 300 8 i1
+h159 s27 1 300 8 i1
+h160 s27 1 300 8 i1
+h161 s27 1 300 8 i1
+h162 s27 1 300 8 i1
+h163 s28 1 300 8 i1
+h164 s28 1 300 8 i1
+h165 s28 1 300 8 i1
+h166 s28 1 300 8 i1
+h167 s28 1 300 8 i1
+h168 s28 1 300 8 i1
+h169 s29 1 300 8 i1
+h170 s29 1 300 8 i1
+h171 s29 1 300 8 i1
+h172 s29 1 300 8 i1
+h173 s29 1 300 8 i1
+h174 s29 1 300 8 i1
+h175 s30 1 300 8 i1
+h176 s30 1 300 8 i1
+h177 s30 1 300 8 i1
+h178 s30 1 300 8 i1
+h179 s30 1 300 8 i1
+h180 s30 1 300 8 i1
+h181 s31 1 300 8 i1
+h182 s31 1 300 8 i1
+h183 s31 1 300 8 i1
+h184 s31 1 300 8 i1
+h185 s31 1 300 8 i1
+h186 s31 1 300 8 i1
+h187 s32 1 300 8 i1
+h188 s32 1 300 8 i1
+h189 s32 1 300 8 i1
+h190 s32 1 300 8 i1
+h191 s32 1 300 8 i1
+h192 s32 1 300 8 i1
+h193 s33 1 300 8 i1
+h194 s33 1 300 8 i1
+h195 s33 1 300 8 i1
+h196 s33 1 300 8 i1
+h197 s33 1 300 8 i1
+h198 s33 1 300 8 i1
+h199 s34 1 300 8 i1
+h200 s34 1 300 8 i1
+h201 s34 1 300 8 i1
+h202 s34 1 300 8 i1
+h203 s34 1 300 8 i1
+h204 s34 1 300 8 i1
+h205 s35 1 300 8 i1
+h206 s35 1 300 8 i1
+h207 s35 1 300 8 i1
+h208 s35 1 300 8 i1
+h209 s35 1 300 8 i1
+h210 s35 1 300 8 i1
+h211 s36 1 300 8 i1
+h212 s36 1 300 8 i1
+h213 s36 1 300 8 i1
+h214 s36 1 300 8 i1
+h215 s36 1 300 8 i1
+h216 s36 1 300 8 i1
+h217 s37 1 300 8 i1
+h218 s37 1 300 8 i1
+h219 s37 1 300 8 i1
+h220 s37 1 300 8 i1
+h221 s37 1 300 8 i1
+h222 s37 1 300 8 i1
+h223 s38 1 300 8 i1
+h224 s38 1 300 8 i1
+h225 s38 1 300 8 i1
+h226 s38 1 300 8 i1
+h227 s38 1 300 8 i1
+h228 s38 1 300 8 i1
+h229 s39 1 300 8 i1
+h230 s39 1 300 8 i1
+h231 s39 1 300 8 i1
+h232 s39 1 300 8 i1
+h233 s39 1 300 8 i1
+h234 s39 1 300 8 i1
+h235 s40 1 300 8 i1
+h236 s40 1 300 8 i1
+h237 s40 1 300 8 i1
+h238 s40 1 300 8 i1
+h239 s40 1 300 8 i1
+h240 s40 1 300 8 i1
+h241 s41 1 300 8 i1
+h242 s41 1 300 8 i1
+h243 s41 1 300 8 i1
+h244 s41 1 300 8 i1
+h245 s41 1 300 8 i1
+h246 s41 1 300 8 i1
+h247 s42 1 300 8 i1
+h248 s42 1 300 8 i1
+h249 s42 1 300 8 i1
+h250 s42 1 300 8 i1
+h251 s42 1 300 8 i1
+h252 s42 1 300 8 i1
+h253 s43 1 300 8 i1
+h254 s43 1 300 8 i1
+h255 s43 1 300 8 i1
+h256 s43 1 300 8 i1
+h257 s43 1 300 8 i1
+h258 s43 1 300 8 i1
+h259 s44 1 300 8 i1
+h260 s44 1 300 8 i1
+h261 s44 1 300 8 i1
+h262 s44 1 300 8 i1
+h263 s44 1 300 8 i1
+h264 s44 1 300 8 i1
+h265 s45 1 300 8 i1
+h266 s45 1 300 8 i1
+h267 s45 1 300 8 i1
+h268 s45 1 300 8 i1
+h269 s45 1 300 8 i1
+h270 s45 1 300 8 i1
+h271 s46 1 300 8 i1
+h272 s46 1 300 8 i1
+h273 s46 1 300 8 i1
+h274 s46 1 300 8 i1
+h275 s46 1 300 8 i1
+h276 s46 1 300 8 i1
+h277 s47 1 300 8 i1
+h278 s47 1 300 8 i1
+h279 s47 1 300 8 i1
+h280 s47 1 300 8 i1
+h281 s47 1 300 8 i1
+h282 s47 1 300 8 i1
+h283 s48 1 300 8 i1
+h284 s48 1 300 8 i1
+h285 s48 1 300 8 i1
+h286 s48 1 300 8 i1
+h287 s48 1 300 8 i1
+h288 s48 1 300 8 i1
+h289 s49 1 300 8 i1
+h290 s49 1 300 8 i1
+h291 s49 1 300 8 i1
+h292 s49 1 300 8 i1
+h293 s49 1 300 8 i1
+h294 s49 1 300 8 i1
+h295 s50 1 300 8 i1
+h296 s50 1 300 8 i1
+h297 s50 1 300 8 i1
+h298 s50 1 300 8 i1
+h299 s50 1 300 8 i1
+h300 s50 1 300 8 i1
+
+[Controllers]
+#First line: Number of controllers
+#Each controller is represented by 'c#'
+#Controller # should start with 1
+#Next, each line a tuple:
+# c# ip port
+1
+c1 192.168.227.130 6633
+
+[Switch2Controller]
+#First line: Number of switches
+#Next, each line specifies a switch and its controller
+# s# c#
+50
+s1 c1
+s2 c1
+s3 c1
+s4 c1
+s5 c1
+s6 c1
+s7 c1
+s8 c1
+s9 c1
+s10 c1
+s11 c1
+s12 c1
+s13 c1
+s14 c1
+s15 c1
+s16 c1
+s17 c1
+s18 c1
+s19 c1
+s20 c1
+s21 c1
+s22 c1
+s23 c1
+s24 c1
+s25 c1
+s26 c1
+s27 c1
+s28 c1
+s29 c1
+s30 c1
+s31 c1
+s32 c1
+s33 c1
+s34 c1
+s35 c1
+s36 c1
+s37 c1
+s38 c1
+s39 c1
+s40 c1
+s41 c1
+s42 c1
+s43 c1
+s44 c1
+s45 c1
+s46 c1
+s47 c1
+s48 c1
+s49 c1
+s50 c1
+
+[Credentials]
+#User name of the dot nodes
+UserName=dot
+
+[OtherConfig]
+#
+OFVersion=1.0
