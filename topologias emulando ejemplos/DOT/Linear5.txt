@@ -50,9 +50,12 @@ NetworkFile=resources/provisioning/libvirt/libvirt_network.xml
 #VM# should start with 1
 #Next, each line specifies a VM, the switch it is attached, CPU, B/W(Mbps), Memory(MB) and image:
 # VM# s# CPU B/W Memory i#
-2
-h1 s1 1 300 64 i1
-h2 s1 2 400 512 i2
+5
+h1 s1 1 300 8 i1
+h2 s1 2 400 8 i2
+h3 s1 1 300 8 i1
+h4 s1 2 400 8 i2
+h5 s1 1 300 8 i1
 
 
 [Controllers]
