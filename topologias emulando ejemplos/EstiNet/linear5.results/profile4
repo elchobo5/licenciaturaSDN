@@ -1,0 +1,4 @@
+# profile4 (unit: speed:meters/second acceleration/deceleration:meters/second^2)
+MaxSpeed = 18
+MaxAcceleration = 1
+MaxDeceleration = 4
