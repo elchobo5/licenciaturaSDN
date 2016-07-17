@@ -1,0 +1,54 @@
+## -*- Mode: python; py-indent-offset: 4; indent-tabs-mode: nil; coding: utf-8; -*-
+
+def build(bld):
+   obj = bld.create_ns3_program('openflow-switch',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'openflow-switch.cc'
+
+   obj = bld.create_ns3_program('topo1',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo1.cc'
+   
+   obj = bld.create_ns3_program('topo2',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo2.cc'
+   
+   obj = bld.create_ns3_program('topo3',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo3.cc'
+   
+   obj = bld.create_ns3_program('topo4',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo4.cc'
+   
+   obj = bld.create_ns3_program('topo5',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo5.cc'
+   
+   obj = bld.create_ns3_program('topo6',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo6.cc'
+   
+   obj = bld.create_ns3_program('topo7',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo7.cc'
+   
+   obj = bld.create_ns3_program('topo8',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo8.cc'
+   
+   obj = bld.create_ns3_program('topo9',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo9.cc'
+   
+   obj = bld.create_ns3_program('topo10',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo10.cc'
+   
+   obj = bld.create_ns3_program('topo11',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo11.cc'
+
+   obj = bld.create_ns3_program('topo12',
+                                ['openflow', 'csma', 'internet', 'applications'])
+   obj.source = 'topo12.cc'

@@ -1,0 +1,9 @@
+#Node1
+route add -net 1.1.1.0/24 tun1
+
+#Node2
+route add -net 1.3.1.0/24 tun2
+
+#Node3
+route add -net 1.2.1.0/24 tun3
+

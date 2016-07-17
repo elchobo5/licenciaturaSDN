@@ -1,0 +1,3 @@
+# system command file
+# command format :
+# 	{Trigger Time(sec)} + 	 + {Command} + 	 + {Output Filename}
