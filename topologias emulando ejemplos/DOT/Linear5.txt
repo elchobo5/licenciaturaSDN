@@ -11,6 +11,7 @@ Linear5
 2
 manager manager 192.168.227.130
 node node 192.168.227.131 4 512 8 eth0 1024
+node node2 192.168.227.129 4 512 8 eth0 1024
 
 [PhysicalMachineDelay]
 #Pairwise delay between any physical vms

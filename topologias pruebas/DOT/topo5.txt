@@ -8,9 +8,13 @@ topo5
 #First line: Number of physical machines
 #Then, each line specifies a tuple:
 #type name ip cpu memory disk external_interface bandwidth
-2
+6
 manager manager 192.168.227.130
 node node 192.168.227.131 4 512 8 eth0 1024
+node node2 192.168.227.129 4 512 8 eth0 1024
+node node3 192.168.227.128 4 512 8 eth0 1024
+node node4 192.168.227.127 4 512 8 eth0 1024
+node node5 192.168.227.126 4 512 8 eth0 1024
 
 [PhysicalMachineDelay]
 #Pairwise delay between any physical vms
