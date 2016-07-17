@@ -37,8 +37,8 @@ print_r("20\n");
 for($i = 1; $i < 11; $i++) {
 	$j = $i*2;
 	$w = $j-1;
-	print_r("h$w s$i 1 300 8 i1\n");
-	print_r("h$j s$i 1 300 8 i1\n");
+	print_r("h$w s$i 1 300 64 i1\n");
+	print_r("h$j s$i 1 300 64 i1\n");
 }
 print_r("\n");
 print_r("[Controllers]\n");

@@ -31,7 +31,7 @@ print_r("[VirtualMachines]\n");
 print_r("#First line: Number of VMs\n#Each switch is represented by 'h#'\n#VM# should start with 1\n#Next, each line specifies a VM, the switch it is attached, CPU, B/W(Mbps), Memory(MB) and image:\n# VM# s# CPU B/W Memory i#\n");
 print_r("1000\n");
 for($i = 1; $i < 1001; $i++) {
-	print_r("h$i s1 1 300 8 i1\n");
+	print_r("h$i s1 1 300 64 i1\n");
 }
 print_r("\n");
 print_r("[Controllers]\n");

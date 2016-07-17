@@ -45,12 +45,12 @@ for($i = 1; $i < 51; $i++) {
 	$z = $j-3;
 	$p = $j-4;
 	$o = $j-5;
-	print_r("h$o s$i 1 300 8 i1\n");
-	print_r("h$p s$i 1 300 8 i1\n");
-	print_r("h$z s$i 1 300 8 i1\n");
-	print_r("h$y s$i 1 300 8 i1\n");
-	print_r("h$w s$i 1 300 8 i1\n");
-	print_r("h$j s$i 1 300 8 i1\n");
+	print_r("h$o s$i 1 300 64 i1\n");
+	print_r("h$p s$i 1 300 64 i1\n");
+	print_r("h$z s$i 1 300 64 i1\n");
+	print_r("h$y s$i 1 300 64 i1\n");
+	print_r("h$w s$i 1 300 64 i1\n");
+	print_r("h$j s$i 1 300 64 i1\n");
 }
 print_r("\n");
 print_r("[Controllers]\n");

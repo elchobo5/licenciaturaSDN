@@ -43,10 +43,10 @@ for($i = 1; $i < 31; $i++) {
 	$w = $j-1;
 	$y = $j-2;
 	$z = $j-3;
-	print_r("h$z s$i 1 300 8 i1\n");
-	print_r("h$y s$i 1 300 8 i1\n");
-	print_r("h$w s$i 1 300 8 i1\n");
-	print_r("h$j s$i 1 300 8 i1\n");
+	print_r("h$z s$i 1 300 64 i1\n");
+	print_r("h$y s$i 1 300 64 i1\n");
+	print_r("h$w s$i 1 300 64 i1\n");
+	print_r("h$j s$i 1 300 64 i1\n");
 }
 print_r("\n");
 print_r("[Controllers]\n");

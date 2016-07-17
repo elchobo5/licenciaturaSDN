@@ -52,7 +52,7 @@ for ($i = 0; $i < 73; $i++) {
 	}
 	else {
 		for ($p = $hostArbol; $p < $hostArbol + 8; $p++) {
-			print_r("h$p s$j 1 300 8 i1\n");
+			print_r("h$p s$j 1 300 64 i1\n");
 		}
 		$hostArbol = $hostArbol + 8;
 	}
