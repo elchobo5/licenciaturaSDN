@@ -1,5 +1,5 @@
 { 
-  "name":"example1", 
+  "name":"topo1", 
   "switches":[
       { "name":"s1","type":"lan"},      
       { "name":"s2","type":"lan"},      
