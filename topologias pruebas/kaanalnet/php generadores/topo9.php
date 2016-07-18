@@ -14,19 +14,21 @@ for ($i = 0; $i < 128; $i++) {
 	$arreglo["nodes"][$i] = array('name' => "h".$j, 'type' => "host");
 }
 $arreglo["links"] = array();
+$arreglo["links"][0]["type"] = "lan";
+$arreglo["links"][0]["switches"] = array();
 $nodoArbol = 2;
 $hostArbol = 1;
 $profundidad = 0;
 for ($i = 0; $i < 127; $i++) {
 	$j = $i + 1;
-	$arreglo["links"][$i]["name"] = "s".$j;
+	$arreglo["links"][0]["switches"][$i]["name"] = "s".$j;
 	if ($profundidad < 6) {
-		$arreglo["links"][$i]["connected_switches"][0]["name"] = "s".($nodoArbol);
-		$arreglo["links"][$i]["connected_switches"][1]["name"] = "s".($nodoArbol + 1);
+		$arreglo["links"][0]["switches"][$i]["connected_switches"][0]["name"] = "s".($nodoArbol);
+		$arreglo["links"][0]["switches"][$i]["connected_switches"][1]["name"] = "s".($nodoArbol + 1);
 	}
 	else { 
-		$arreglo["links"][$i]["connected_nodes"][0]["name"] = "h".($hostArbol);
-		$arreglo["links"][$i]["connected_nodes"][1]["name"] = "h".($hostArbol + 1);
+		$arreglo["links"][0]["switches"][$i]["connected_nodes"][0]["name"] = "h".($hostArbol);
+		$arreglo["links"][0]["switches"][$i]["connected_nodes"][1]["name"] = "h".($hostArbol + 1);
 		$hostArbol = $hostArbol + 2;
 	}
 	$nodoArbol = $nodoArbol + 2;

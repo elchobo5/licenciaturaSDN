@@ -14,10 +14,12 @@ for ($i = 0; $i < 1000; $i++) {
 	$arreglo["nodes"][$i] = array('name' => "h".$j, 'type' => "host");
 }
 $arreglo["links"] = array();
-$arreglo["links"][0]["name"] = "s1";
+$arreglo["links"][0]["type"] = "lan";
+$arreglo["links"][0]["switches"] = array();
+$arreglo["links"][0]["switches"][0]["name"] = "s1";
 for ($i = 0; $i < 1000; $i++) {
 	$j = $i + 1;
-	$arreglo["links"][0]["connected_nodes"][$i]["name"] = "h".($j);
+	$arreglo["links"][0]["switches"][0]["connected_nodes"][$i]["name"] = "h".($j);
 }
 
 $json = json_encode($arreglo);
