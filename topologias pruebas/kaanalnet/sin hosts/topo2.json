@@ -1,0 +1,53 @@
+{ 
+  "name":"topo2", 
+  "switches":[
+      { "name":"s1","type":"lan"},      
+      { "name":"s2","type":"lan"},
+      { "name":"s3","type":"lan"},      
+      { "name":"s4","type":"lan"},
+      { "name":"s5","type":"lan"},      
+      { "name":"s6","type":"lan"},
+      { "name":"s7","type":"lan"},      
+      { "name":"s8","type":"lan"},
+      { "name":"s9","type":"lan"},      
+      { "name":"s10","type":"lan"},	
+	  { "name":"s11","type":"lan"},      
+      { "name":"s12","type":"lan"},
+      { "name":"s13","type":"lan"},      
+      { "name":"s14","type":"lan"},
+      { "name":"s15","type":"lan"},      
+      { "name":"s16","type":"lan"},
+      { "name":"s17","type":"lan"},      
+      { "name":"s18","type":"lan"},
+      { "name":"s19","type":"lan"},      
+      { "name":"s20","type":"lan"} 
+  ],  
+  "nodes":[
+  ],
+  "links":[
+    {
+      "type":"lan",
+      "switches":[
+      { "name":"s1","connected_switches":[{"name":"s2"},{"name":"s3"},{"name":"s4"},{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+      { "name":"s2","connected_switches":[{"name":"s3"},{"name":"s4"},{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s3","connected_switches":[{"name":"s4"},{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s4","connected_switches":[{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+      { "name":"s5","connected_switches":[{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s6","connected_switches":[{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s7","connected_switches":[{"name":"s8"},{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+      { "name":"s8","connected_switches":[{"name":"s9"},{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s9","connected_switches":[{"name":"s10"},{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s10","connected_switches":[{"name":"s11"},{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+      { "name":"s11","connected_switches":[{"name":"s12"},{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s12","connected_switches":[{"name":"s13"},{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s13","connected_switches":[{"name":"s14"},{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s14","connected_switches":[{"name":"s15"},{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s15","connected_switches":[{"name":"s16"},{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s16","connected_switches":[{"name":"s17"},{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s17","connected_switches":[{"name":"s18"},{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s18","connected_switches":[{"name":"s19"},{"name":"s20"}]},
+	  { "name":"s19","connected_switches":[{"name":"s20"}]}
+	  ]
+    }    
+  ]  
+}

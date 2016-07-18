@@ -1,0 +1,34 @@
+{ 
+  "name":"topo1", 
+  "switches":[
+      { "name":"s1","type":"lan"},      
+      { "name":"s2","type":"lan"},      
+      { "name":"s3","type":"lan"},      
+      { "name":"s4","type":"lan"},      
+      { "name":"s5","type":"lan"},      
+      { "name":"s6","type":"lan"},      
+      { "name":"s7","type":"lan"},      
+      { "name":"s8","type":"lan"},      
+      { "name":"s9","type":"lan"},      
+      { "name":"s10","type":"lan"}                   
+  ],  
+  "nodes":[
+  ],
+  "links":[
+    {
+      "type":"lan",
+      "switches":[ 
+	  {"name":"s1","connected_switches":[{"name":"s2"},{"name":"s3"},{"name":"s4"},{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+      {"name":"s2","connected_switches":[{"name":"s3"},{"name":"s4"},{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s3","connected_switches":[{"name":"s4"},{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s4","connected_switches":[{"name":"s5"},{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s5","connected_switches":[{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s5","connected_switches":[{"name":"s6"},{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+      {"name":"s6","connected_switches":[{"name":"s7"},{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s7","connected_switches":[{"name":"s8"},{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s8","connected_switches":[{"name":"s9"},{"name":"s10"}]},
+	  {"name":"s9","connected_switches":[{"name":"s10"}]}
+	  ]
+    }    
+  ]  
+}
