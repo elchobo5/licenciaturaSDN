@@ -28,13 +28,13 @@ Maquinas virtuales
 
 -EstiNet
 
-  vm:
+  vm:   https://mega.nz/#!g4AmEIpL!qRJxF3h1UVq-3ExH9I4u1LsV3tZCi30au1m_ukXVc9s
   
   user: estinet
   
   pass: estinet
   
-  pass: openflowEstinet
+  pass: estinetOpenflow
 
 -DOT
 
