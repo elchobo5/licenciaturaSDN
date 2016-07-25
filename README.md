@@ -3,7 +3,12 @@
 Maquinas virtuales
 
 -MiniNet
-  \nvm:
+
+  vm:
+  
+  user: mininet
+  
+  pass: mininet
 
 -KaanalNet
 
