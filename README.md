@@ -3,6 +3,7 @@
 Maquinas virtuales
 
 -MiniNet
+  \nvm:
 
 -KaanalNet
 
