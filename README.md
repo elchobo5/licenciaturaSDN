@@ -12,7 +12,7 @@ Maquinas virtuales
 
 -KaanalNet
 
-  vm:
+  vm:   https://mega.nz/#!9hwWFLhI!7IAX2wrlLJ4u1xzOXHXuR-zhc6em85qTD_L9xBt9vY0
   
   user: mininet
   
