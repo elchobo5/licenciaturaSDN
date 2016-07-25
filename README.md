@@ -12,9 +12,29 @@ Maquinas virtuales
 
 -KaanalNet
 
+  vm:
+  
+  user: mininet
+  
+  pass: mininet
+
 -NS3
 
+  vm:
+  
+  user: user
+  
+  pass: user
+
 -EstiNet
+
+  vm:
+  
+  user: estinet
+  
+  pass: estinet
+  
+  pass: openflowEstinet
 
 -DOT
 
