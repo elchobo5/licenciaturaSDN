@@ -4,7 +4,7 @@ Maquinas virtuales
 
 -MiniNet
 
-  vm:
+  vm:   https://mega.nz/#!x45F1TbQ!7SyhjfGrmHC-ylgHVLbI3-THJRZfeL7F4jpqkzEKRwo
   
   user: mininet
   
@@ -20,7 +20,7 @@ Maquinas virtuales
 
 -NS3
 
-  vm:
+  vm:   https://mega.nz/#!U9Yz1SQC!yPJzFofm2S0Xd1Q00D4UWsSaL5NFNRq6MUn9_RocLPg
   
   user: user
   
@@ -38,5 +38,19 @@ Maquinas virtuales
 
 -DOT
 
-  DOT Manager
-  DOT Node
+  - DOT Manager
+  
+      vm:
+  
+      user: manager
+
+      pass: manager
+  
+  - DOT Node
+  
+      vm:
+  
+      user: node
+
+      pass: node
+  
