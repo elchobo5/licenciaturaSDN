@@ -40,7 +40,7 @@ Maquinas virtuales
 
   - DOT Manager
   
-      vm:
+      vm:   https://mega.nz/#!c1xTSLrD!1Nr2PEFe-kJglx5jIdrbd-Cgg1U0KykEBKRRd6iBPik
   
       user: manager
 
@@ -48,7 +48,7 @@ Maquinas virtuales
   
   - DOT Node
   
-      vm:
+      vm:   https://mega.nz/#!t5BCXLrD!bT9YSguoZlVibQnJiHmXk12KcPJxm7nIJw4kB0EUiY4
   
       user: node
 
